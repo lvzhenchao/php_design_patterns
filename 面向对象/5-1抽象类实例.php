@@ -3,6 +3,9 @@
 abstract class Animal {
     public abstract function run();
     public abstract function eat();
+    public function go() {
+        echo "go...";
+    }
 }
 
 class Dog extends Animal {
