@@ -1,36 +1,45 @@
 <?php
-require_once 'Captcha.php';
 
-class CaptchaBuilder extends Builder {
+require_once  'Captcha.php';
 
-    private $captcha;
+class CaptchaBuilder  extends Builder{
 
-    public function __construct()
-    {
-        $this->captcha = new Captcha();
-    }
+	private  $captcha;
 
-    public function createBg() {
-        $this->captcha->createBg();
-    }
+	public function  __construct($config){
 
-    public  function getCode() {
-        $this->captcha->getCode();
-    }
-    public  function setCode() {
-        $this->captcha->setCode();
-    }
-    public  function setDot(){
-        $this->captcha->setDot();
-    }
-    public  function setCurve(){
-        $this->captcha->setCurve();
-    }
+		$this->captcha = new Captcha($config);
+	}
 
-    public function create()
-    {
-        return $this->captcha;
-    }
+	public function createBg(){
+
+		$this->captcha->createBg();
+	}
+
+	public  function getCode(){
+	
+		$this->captcha->getCode();
+	}
+
+	public  function setCode(){
+	
+		$this->captcha->setCode();
+	}
+
+	public  function setDot(){
+
+		$this->captcha->setDot();
+	}
+
+	public function setCurve(){
+
+		$this->captcha->setCurve();
+	}
+
+
+	public function  create(){
+		return $this->captcha;	
+	}
 
 
 }
