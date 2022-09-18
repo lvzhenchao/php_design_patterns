@@ -14,7 +14,7 @@ class Product {
     //产品展示
     public function show()
     {
-        echo "产品名称：{$this->name} 产品尺寸：{$this->size} 产品颜色：{$this->color}".PHP_EOL;
+        echo "产品名称：{$this->name}; 产品尺寸：{$this->size}; 产品颜色：{$this->color};".PHP_EOL;
     }
 
 }
