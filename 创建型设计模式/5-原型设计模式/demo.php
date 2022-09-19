@@ -22,6 +22,7 @@ class Drive {
     public function __clone()
     {
         // TODO: Implement __clone() method.
+        $this->car = clone $this->car;//加上这个就是深拷贝了，就不会有41和42重复的了
     }
 }
 
@@ -32,10 +33,12 @@ class Client {
 
         $d = new Drive();
         $d->setCar($car);
-        $d->start();
+//        $d->start();
 
         $dd = clone $d;//关键点
         $car->name = '宝马';
+
+        $d->start();//如果放到这里第一个，会发现一样的内容：浅拷贝
         $dd->start();
     }
 }
