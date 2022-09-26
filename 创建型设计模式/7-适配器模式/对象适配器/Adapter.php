@@ -10,7 +10,7 @@ class Adapter implements Target {
         $this->_adaptee = $adaptee;
     }
 
-    //对象委派调取方法
+    //对象委派调取方法：组合对象
     public function go()
     {
         $this->_adaptee->go();
