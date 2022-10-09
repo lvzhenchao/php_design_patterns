@@ -1,5 +1,7 @@
 <?php
 require_once "Target.php";
+require_once "MysqliAdaptee.php";
+require_once "PdoAdaptee.php";
 
 class Adapter implements Target {
 
