@@ -2,6 +2,6 @@
 class Order {
     public function getOrderInfo()
     {
-        echo "OrderInfo";
+        echo "OrderInfo...".PHP_EOL;
     }
 }

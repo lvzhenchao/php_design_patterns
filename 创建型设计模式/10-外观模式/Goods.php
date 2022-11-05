@@ -2,6 +2,6 @@
 class Goods {
     public function getGoodsInfo()
     {
-        echo "goodInfo";
+        echo "GoodInfo...".PHP_EOL;
     }
 }
