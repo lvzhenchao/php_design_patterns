@@ -4,6 +4,8 @@ require_once "FlyWeight.php";
 
 class Monster extends FlyWeight{//实例
 
+    protected $blood = 100;
+
     public function __construct($color, $height)
     {
         $this->setColor($color);
@@ -20,6 +22,12 @@ class Monster extends FlyWeight{//实例
     {
         // TODO: Implement setHeight() method.
         $this->height = $height;
+    }
+
+    public function setBlood($int)
+    {
+        // TODO: Implement setHeight() method.
+        return $this->blood - $int;
     }
 
 }

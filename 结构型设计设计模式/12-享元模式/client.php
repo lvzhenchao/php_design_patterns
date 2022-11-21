@@ -7,6 +7,13 @@ $m2 = $fa->getMonster("blue", 150, "B");
 $m3 = $fa->getMonster("gray", 250, "C");
 $m4 = $fa->getMonster("red", 50, "A");
 
+$b1 = $m1->setBlood(20);
+$b2 = $m2->setBlood(30);
+
+var_dump($b1);
+var_dump($b2);
+die;
+
 var_dump($m1);
 var_dump($m2);
 var_dump($m3);
