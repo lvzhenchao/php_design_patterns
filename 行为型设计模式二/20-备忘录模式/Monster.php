@@ -2,7 +2,7 @@
 
 require_once "Memento.php";
 
-class Monster{
+class Monster{//备忘录管理器
 
     public $blood = 100;
 

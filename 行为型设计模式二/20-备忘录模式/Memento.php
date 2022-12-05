@@ -1,6 +1,6 @@
 <?php
 
-class Memento{
+class Memento{//备忘录类
     public $blood;
 
     public function __construct($blood)
